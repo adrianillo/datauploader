@@ -12,7 +12,7 @@
     function aditionaldata() {
         this.id = 0;
         this.des = "";
-    } 
+    }
 
     function sendData() {
         var aditional = new aditionaldata();
