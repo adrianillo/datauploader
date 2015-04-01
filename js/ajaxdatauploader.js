@@ -21,16 +21,16 @@ jQuery.extend({
             this.piedelenght = 4000;
         this.pagerequest.page = this.pagerequest = o.pagerequest;
         if (o.encodedata) {
-            this.totaldates.dates = this.dates = encodeURIComponent(o.dates);
+            this.totaldata.data = this.data = encodeURIComponent(o.data);
         }
         else
         {
-            this.totaldates.dates = this.dates =o.dates;
+            this.totaldata.data = this.data =o.data;
         }
-        this.senddata(this.totaldates.dates);
+        this.senddata(this.totaldata.data);
     },
     pagerequest: { page: null },
-    totaldates: { dates: null },
+    totaldata: { data: null },
     datauploader: function (datapiece) {
         this.datapiece = datapiece;
         this.start = 0;

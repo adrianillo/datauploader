@@ -21,7 +21,7 @@
         jQuery.ajaxdatauploader(
         {
             additional: aditional,
-            dates: document.getElementById("datatosend").value,
+            data: document.getElementById("datatosend").value,
             pagerequest: "getdata.aspx",
             piecelenght: 4000,
             encodedata: true,
