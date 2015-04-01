@@ -20,7 +20,13 @@ jQuery.extend({
         else
             this.piedelenght = 4000;
         this.pagerequest.page = this.pagerequest = o.pagerequest;
-        this.totaldates.dates = this.dates = encodeURIComponent(o.dates);
+        if (o.encodedata) {
+            this.totaldates.dates = this.dates = encodeURIComponent(o.dates);
+        }
+        else
+        {
+            this.totaldates.dates = this.dates =o.dates;
+        }
         this.senddata(this.totaldates.dates);
     },
     pagerequest: { page: null },
